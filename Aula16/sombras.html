@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombreamento</title>
+
+    <style>
+        body{
+            font: 1em Arial, Helvetica, sans-serif;
+            background-color: peachpuff;
+        }
+
+        main{
+            display: inline;
+        }
+
+        header#titulo-pricipal{
+            font-size: 0.8em;
+            text-align: center;
+            background-color: white;
+            border: 1px solid black;
+            margin: auto;
+        }
+
+        article.caixa{
+            background-color: snow;
+            width: 400px;
+            margin: auto;
+            padding: 1px 10px;
+            box-shadow: 3px 5px 10px black;
+            border-radius: 0px 10px 10px 0px;
+        }
+
+        article.caixa > h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        article.caixa > p{
+            text-align: justify;
+        }
+
+        div{
+            width: 10px;
+            background-color: black;
+            border: 10px solid;
+
+        }
+    </style>
+
+</head>
+<body>
+    <header id="titulo-pricipal">
+        <h1>Noticias do Dia</h1>
+    </header>
+
+    <br>
+        <article class="caixa">
+            <h1>Noticia 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quis, quibusdam reiciendis voluptas beatae esse ipsam eligendi enim corporis iusto?</p>
+        </article>
+
+        <br>
+
+        <article class="caixa">
+            <h1>Noticia 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quo facilis voluptate vitae illum eligendi quidem dicta reprehenderit exercitationem ad?</p>
+        </article>
+
+        <br>
+
+        <article class="caixa">
+            <h1>Noticia 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quo facilis voluptate vitae illum eligendi quidem dicta reprehenderit exercitationem ad?</p>
+        </article>
+</body>
+</html>
