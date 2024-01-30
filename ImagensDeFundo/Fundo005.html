@@ -9,28 +9,62 @@
         body{
             margin: 0;
             padding: 0;
-            height: 100vh;
+            min-height: 100vh;
+            height: auto;
             background-image: url("imagens/wallpaper002.jpg");
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
+            background-attachment: fixed;
             background-color: black;
         }
 
         main{
-            width: 50vw;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
             border-radius: 10px;
             border: 2px solid black;
             background-color: white;
         }
+
+        div.caixa{
+            position: relative;
+            height: 0px;
+            padding-bottom: 310px;
+            margin: 0px -10px 0px -10px;
+            
+        }
+
+        div.background{
+            position: absolute;
+            height: 300px;
+            width: 100%;
+            background-image: url("imagens/wallpaper001.jpg");
+            background-position: center center;
+            background-attachment: fixed;
+            background-color: black;
+        }
+
+
+
+
     </style>
 </head>
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati distinctio debitis, eum nam cupiditate asperiores? Rerum sunt alias illo exercitationem, vel accusantium ex possimus earum quis officiis voluptatem qui distinctio deserunt. Animi laborum consequatur voluptate aspernatur ipsa harum eius doloremque corrupti suscipit expedita? Porro ipsam ullam dolores qui quae non. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda hic, laudantium placeat unde doloremque sunt debitis omnis nobis, cumque dolorum a ipsa optio, quas non possimus id doloribus quo vel? Alias eveniet eos doloribus odio iusto reiciendis obcaecati dolorum quod a ad repellendus natus, nam libero deserunt illo animi minima.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi maxime nulla suscipit aliquid voluptatibus totam labore, sint quia. Quas porro expedita reprehenderit ullam ducimus qui repudiandae omnis ipsum sequi? Natus dolorem voluptatem omnis repellat nam dolorum rerum, expedita fuga doloribus repellendus voluptatibus repudiandae et nesciunt quaerat, ullam saepe eum recusandae. Neque error laborum cum voluptatem laboriosam amet necessitatibus itaque voluptatum sunt possimus, eum reiciendis commodi tempora labore tenetur culpa molestiae consectetur praesentium maxime odit quidem provident voluptates at quod. Optio laboriosam nisi sapiente sit illo. Consequatur voluptas pariatur autem delectus itaque, placeat nesciunt officiis explicabo, labore, ab dolores enim omnis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ad et itaque doloremque laboriosam exercitationem illo animi ducimus cupiditate. Possimus, porro iste. Temporibus pariatur laboriosam quasi quis sunt illo! Vero perspiciatis culpa nihil fuga sit ducimus quaerat consequatur. Eaque eligendi facere delectus beatae iusto accusantium, iste consectetur quam quaerat quis.</p>
+        <h2>Testando o attachment</h2>
+        <div class="caixa">
+            <div class="background"></div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, minus architecto! Natus impedit incidunt veritatis blanditiis distinctio, eum porro iure nesciunt ipsa repellendus, ipsam voluptatem vel, commodi dignissimos nisi quis? Molestiae voluptates a fuga, quia accusantium nostrum porro sequi? Quod assumenda unde, odit neque dolores, ducimus, facere voluptatem quo sed recusandae quia impedit! Aliquam quasi veniam obcaecati, qui culpa sed ab odio voluptas ut id officia nostrum harum praesentium molestias, ullam ratione! Reiciendis numquam quibusdam, ex eaque maxime adipisci iste doloremque, quos odit alias amet sint fuga tenetur sit deleniti reprehenderit delectus optio, libero quas rem! Debitis deserunt veniam odit.</p>
     </main>
+    <footer>teste</footer>
 </body>
 </html>
