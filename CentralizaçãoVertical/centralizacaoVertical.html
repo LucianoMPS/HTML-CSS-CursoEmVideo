@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Centralization</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        div#fora{
+            position: relative;
+            height: 100vh;
+            background-color: blueviolet;
+            background-image: url("https://pic.onlinewebfonts.com/thumbnails/icons_56626.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        div#dentro{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 300px;
+            width: 300px;
+            transform: translate(-50%, -50%);
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="fora">
+        <div id="dentro"></div>
+    </div>
+</body>
+</html>
