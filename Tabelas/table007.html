@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo de colunas</title>
+
+    <style>
+        table{
+            padding: 5px;
+            margin: auto;
+            border: 1px solid black;
+        }
+
+        caption{
+            padding: 10px;
+
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+
+        td, th{
+            padding: 5px;
+            border: 1px solid black;
+
+            text-align: center;
+        }
+
+        .extremos{
+            background-color: aqua;
+        }
+
+
+        .meio{
+            background-color: blue;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="extremos">
+            <col class="meio" span="2">
+            <col class="extremos">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Programadora</td>
+            </tr>
+
+            <tr>
+                <td>João da Silva</td>
+                <td>M</td>
+                <td>33</td>
+                <td>Administrador</td>
+            </tr>
+
+            <tr>
+                <td>Luan Freire</td>
+                <td>F</td>
+                <td>28</td>
+                <td>Professora</td>
+            </tr>
+
+            <tr>
+                <td>Cleber Oliveira</td>
+                <td>M</td>
+                <td>26</td>
+                <td>Ceo</td>
+            </tr>
+
+
+        </tbody>
+
+
+    </table>
+</body>
+</html>
