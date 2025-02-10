@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <style>
+    body{
+  min-height: 300px;
+}
+
+.container{
+  display: grid;
+  color: white;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 70px auto 70px;
+  grid-template-areas: "header header" "aside main" "footer footer";
+}
+
+header{
+  background-color: darkred;
+  grid-area: header;
+}
+
+aside{
+  background-color: darkgreen;
+  grid-area: aside;
+}
+
+main{
+  background-color: darkorange;
+  grid-area: main;
+  height: 200px;
+}
+
+footer{
+  background-color: darkblue;
+  grid-area: footer;
+}
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+</head>
+<body>
+    <div class="container" >
+  <header>Header</header>
+  <aside>Aside</aside>
+  <main>Main</main>
+  <footer>Footer</footer>
+</div>
+
+
+</body>
+</html>

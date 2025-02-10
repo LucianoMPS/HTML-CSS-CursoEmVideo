@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+        body{
+            height: 100vh;
+            background-color: antiquewhite;
+
+        }
+
+        .login{
+            margin-top: 30px;
+            margin: auto;
+            width: 40vw;
+
+            padding: 20px;
+
+            border-radius: 0px 0px 10px 10px;
+
+            background-color: rgba(0, 0, 0, 0.802);
+            color: white;
+
+            & h1{
+                text-align: center;
+                padding-bottom: 30px;
+            }
+
+            & .btn{
+                text-align: center;
+            }
+
+            & form{
+                & *{
+                    margin: 5px;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Cadastro de novos usuarios</h1>
+        <form action="cadastro.php" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="tel" id="tel" required pattern="^[0-9]{4, 5}-[0-9]{4}$" placeholder="xxxx-xxxx">
+                </p>
+            </fieldset>
+
+            <div class="btn">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

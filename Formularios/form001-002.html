@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+        body{
+            background-color: rgb(90, 90, 175);
+            color: wheat;
+
+            h1{
+                text-align: center;
+            }
+        }
+
+        form{
+            padding: 20px;
+            margin: auto;
+            width: 40vw;
+
+            border-radius: 10px;
+
+            background-color: rgba(0, 0, 0, 0.268);
+        }
+
+        .formulario{
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.543);
+
+            h1{
+                text-align: center;
+            }
+
+            input{
+                width: 98%;
+            }
+
+            & .botao {
+                width: 70%;
+                height: 40px;
+
+                border-radius: 10px;
+
+                background-color: white
+            };
+
+            & .botao:hover{
+                background-color: wheat;
+                /* color: ; */
+
+                font-weight: bold;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Meu Primeiro Formulario</h1>
+    <form action="cadastro.php" autocomplete="on" method="post"> 
+        <div class="formulario">
+            <h1>Dados Pessoais</h1>
+            <p>
+                <label for="nome">Usuario:</label>
+                <input type="text" id="nome" name="nome" required placeholder="nome completo" autocomplete="username"> 
+            </p>
+            <p>
+                <label for="sobnome">Senha:</label>
+                <input type="password" id="sobnome" name="sobnome" required minlength="8" maxlength="20" placeholder="minimo 8 caracteres" autocomplete="new-password">  
+            </p>
+            <input type="submit" value="enviar" class="botao">
+            <input type="reset" value="limpar" class="botao" style="width: 28%;">
+        </div>
+    </form>
+</body>
+</html>
